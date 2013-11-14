@@ -12,12 +12,9 @@
 		<style type="text/css">
 			.ui-slider-switch{ width: 10em !important}
 		/*COMENTARI*/
-		
-		//*ALTRE COMANTARI
 
 		</style>
 	<!--CODIC JAVASCRIPT-->
-	
 		<script type="text/javascript">
 			$(function () {
 				//** SUMAR
