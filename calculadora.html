@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--HTML-->
+		<title>000</title>
+		<meta name="viewport" content="width=decive-width, initial-scale=1, maximun-scale=no">
+	<!--SCRIPTS-->
+		<link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-1.3.2.css">	
+		<script type="text/javaScript" src="js/jquery203.js"></script>
+		<script type="text/javaScript" src="jqm/jquery.mobile-1.3.2.js"></script>
+	<!--CODIC CSS-->	
+		<style type="text/css">
+			.ui-slider-switch{ width: 10em !important}
+		/*COMENTARI*/
+
+		</style>
+	<!--CODIC JAVASCRIPT-->
+		<script type="text/javascript">
+			$(function () {
+				//** SUMAR
+					$("#bsum").click(function () {      
+						var x = parseInt($('#tx').val());
+						var y = parseInt($('#ty').val());
+						var res = x + y;
+						$('#tres').val(res);
+   					});
+
+					$("#tx, #ty").change(function () {      
+						var x = parseInt($('#tx').val());
+						var y = parseInt($('#ty').val());
+						var res = x + y;
+						$('#tres').val(res);
+   					});
+
+				//** RESTAR
+   					$("#bres").click(function () {      
+						var x = parseInt($('#tx').val());
+						var y = parseInt($('#ty').val());
+						var res = x - y;
+						$('#tres').val(res);
+   					});
+
+					$("#tx, #ty").change(function () {      
+						var x = parseInt($('#tx').val());
+						var y = parseInt($('#ty').val());
+						var res = x + y;
+						$('#tres').val(res);
+   					});
+
+
+
+
+
+			});
+		</script>
+
+	</head>
+<!--BODY-->	
+	<body>
+	<!--PAGINA-->
+		<div data-role="page">
+		<!--CABECERA-->
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<h1>CALCULADORA</h1>
+			</div>
+		<!--CONTENGUT-->
+			<div data-role="content" data-theme="b">
+				<!--CONTENGUT-->
+				<table border="1" id="taula" align="center">
+						<!--FLIP PANEL-->
+						<tr id="tablePanel">
+							<td align="center">
+								<label for="x">x</label>
+							</td>
+							<td align="center">
+								<label for="y">y</label>
+							</td>
+							<td align="center">
+								<label for="res">resultat</label>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								<input type="text" name="tx" id="tx" value="" />
+							</td>
+							<td align="center">
+								<input type="text" name="ty" id="ty" value="" />
+							</td>
+							<td align="center" colspan="2">
+								<input type="text" name="tres" id="tres" value="0" />
+							</td>
+
+						</tr>
+						<!--TEXT-->
+						<tr>
+							<td align="center">
+								<input type="button" name="+" value="+" id="bsum"/>
+
+							</td>
+							<td align="center">
+								<input type="button" name="-" value="-" id="bres"/>
+	
+							</td>
+							<td align="center">
+								<input type="button" name="*" value="*" id="bmul"/>
+							</td>
+							<td align="center">
+								<input type="button" name="/" value="/" id="bdiv"/>
+
+							</td>
+						</tr>
+
+					</table>
+				</div>
+
+
+
+
+
+
+
+
+
+
+		<!-- FI CONTENGUT-->
+			</div>
+		<!--PEU DE PAGINA-->
+			<div data-role="footer" data-theme="b" data-position="fixed">
+				<h3>vicent.gaspar@gmail.com</h3>
+			</div>
+		</div>
+	</body>
+</html>
